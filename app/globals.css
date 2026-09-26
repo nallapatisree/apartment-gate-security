@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f7f5ef;
+  color: #182229;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-head {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-tab {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: #e2a63b;
+  color: #182229;
+}
+
+:focus-visible {
+  outline: 2px solid #3b6ea5;
+  outline-offset: 2px;
+}
+
+/* thin scrollbar for ledger tables */
+.ledger-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.ledger-scroll::-webkit-scrollbar-thumb {
+  background: #d9d4c6;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
